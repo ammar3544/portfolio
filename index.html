@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio | Web Developer" />
+  <title>Portfolio | Your Name</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#home">YourName<span>.</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="btn btn--sm">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <p class="badge">Available for freelance / internship</p>
+        <h1>
+          Hi, aku <span class="grad">Your Name</span><br />
+          Web Developer (Python / Flask)
+        </h1>
+        <p class="lead">
+          Aku membangun web app yang rapi, aman, dan cepat. Fokus: backend Python (Flask),
+          database, dan UI modern yang clean.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#projects">Lihat Project</a>
+          <a class="btn btn--ghost" href="#contact">Kontak</a>
+        </div>
+
+        <div class="hero__meta">
+          <div class="meta">
+            <span class="meta__label">Location</span>
+            <span class="meta__value">Indonesia</span>
+          </div>
+          <div class="meta">
+            <span class="meta__label">Email</span>
+            <span class="meta__value"><a href="mailto:youremail@gmail.com">youremail@gmail.com</a></span>
+          </div>
+          <div class="meta">
+            <span class="meta__label">GitHub</span>
+            <span class="meta__value"><a href="https://github.com/yourusername" target="_blank" rel="noreferrer">github.com/yourusername</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <div class="profile">
+          <!-- Ganti src ke fotomu kalau ada -->
+          <img class="profile__img" src="assets/img/avatar.png" alt="Profile" onerror="this.style.display='none'" />
+          <div class="profile__fallback">
+            <div class="ring"></div>
+            <div>
+              <h3>Your Name</h3>
+              <p>Web Developer • Python</p>
+            </div>
+          </div>
+
+          <div class="profile__stats">
+            <div class="stat">
+              <div class="stat__num">10+</div>
+              <div class="stat__label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">1+</div>
+              <div class="stat__label">Years</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Fast</div>
+              <div class="stat__label">Delivery</div>
+            </div>
+          </div>
+
+          <div class="profile__links">
+            <a class="chip" href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="chip" href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="chip" href="https://instagram.com/yourusername" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-blur a"></div>
+    <div class="bg-blur b"></div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>About</h2>
+        <p>Ringkas, jelas, dan fokus ke value yang kamu bawa.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Siapa aku?</h3>
+          <p>
+            Aku seorang web developer yang biasa mengerjakan aplikasi berbasis Python (Flask),
+            integrasi database, autentikasi role-based, upload file, hingga fitur keamanan (hashing/enkripsi).
+          </p>
+          <p>
+            Aku suka membuat sistem yang terstruktur: rapi, mudah di-maintain, dan siap dipakai tim.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Yang sering aku kerjakan</h3>
+          <ul class="list">
+            <li>Backend API (Flask) + MySQL</li>
+            <li>Auth & role (admin/verifikator/user)</li>
+            <li>Upload & processing dokumen (PDF)</li>
+            <li>Security: hashing, encryption workflow</li>
+            <li>UI modern (HTML/CSS/JS)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Skills</h2>
+        <p>Teknologi yang aku pakai dan kuasai.</p>
+      </div>
+
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">Flask</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">REST API</span>
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Git / GitHub</span>
+        <span class="chip">Linux</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Projects</h2>
+        <p>Pilih 3–6 project terbaikmu. Tambahkan link demo / repo.</p>
+      </div>
+
+      <div class="cards">
+        <!-- PROJECT 1 -->
+        <article class="card project">
+          <div class="project__top">
+            <h3>Secure Docs Verification</h3>
+            <span class="pill">Flask • Crypto • PDF</span>
+          </div>
+          <p>
+            Sistem pengamanan & verifikasi dokumen dengan hashing + QR metadata, role-based access,
+            dan workflow validasi dokumen.
+          </p>
+          <div class="project__links">
+            <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noreferrer">Repo</a>
+            <a class="btn btn--sm" href="#" target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="card project">
+          <div class="project__top">
+            <h3>Portfolio Website</h3>
+            <span class="pill">HTML • CSS • JS</span>
+          </div>
+          <p>
+            Website portfolio responsive, cepat, dan siap deploy di GitHub Pages dengan struktur rapi.
+          </p>
+          <div class="project__links">
+            <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noreferrer">Repo</a>
+            <a class="btn btn--sm" href="#" target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="card project">
+          <div class="project__top">
+            <h3>Admin Dashboard</h3>
+            <span class="pill">CRUD • Auth • UI</span>
+          </div>
+          <p>
+            Dashboard admin untuk manajemen data, filter, export, dan audit log sederhana.
+          </p>
+          <div class="project__links">
+            <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noreferrer">Repo</a>
+            <a class="btn btn--sm" href="#" target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Experience</h2>
+        <p>Kalau belum kerja formal, isi dengan organisasi, kepanitiaan, atau freelance.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="titem card">
+          <div class="titem__head">
+            <h3>Web Developer (Freelance)</h3>
+            <span>2025 — Sekarang</span>
+          </div>
+          <ul class="list">
+            <li>Membangun landing page & web app sederhana untuk kebutuhan UMKM/organisasi.</li>
+            <li>Fokus performance, struktur folder rapi, dan deployment.</li>
+          </ul>
+        </div>
+
+        <div class="titem card">
+          <div class="titem__head">
+            <h3>Organisasi / Kepanitiaan</h3>
+            <span>2024 — 2025</span>
+          </div>
+          <ul class="list">
+            <li>Kontribusi design / dokumentasi / website event.</li>
+            <li>Koordinasi tim & deliverable berbasis jadwal.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Contact</h2>
+        <p>Kamu bisa taruh email, WhatsApp link, dan form sederhana (tanpa backend).</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Let’s talk</h3>
+          <p>Untuk kerja sama, project, atau kesempatan magang.</p>
+
+          <div class="contact__items">
+            <a class="contact__item" href="mailto:youremail@gmail.com">
+              <span>Email</span><b>youremail@gmail.com</b>
+            </a>
+            <a class="contact__item" href="https://wa.me/628xxxxxxxxxx" target="_blank" rel="noreferrer">
+              <span>WhatsApp</span><b>+62 8xx-xxxx-xxxx</b>
+            </a>
+            <a class="contact__item" href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+              <span>GitHub</span><b>@yourusername</b>
+            </a>
+          </div>
+        </div>
+
+        <form class="card form" onsubmit="return handleSubmit(event)">
+          <h3>Kirim pesan</h3>
+          <label>
+            Nama
+            <input required name="name" placeholder="Nama kamu" />
+          </label>
+          <label>
+            Email
+            <input required type="email" name="email" placeholder="email@domain.com" />
+          </label>
+          <label>
+            Pesan
+            <textarea required name="message" rows="5" placeholder="Tulis pesan..."></textarea>
+          </label>
+
+          <button class="btn" type="submit">Kirim</button>
+          <p class="hint" id="formHint">
+            Form ini demo (tanpa backend). Nanti bisa aku bantu sambungkan ke Formspree/Google Form.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Your Name. Built with HTML/CSS/JS.</p>
+      <a href="#home" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
