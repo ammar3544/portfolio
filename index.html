@@ -1,314 +1,172 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio | Web Developer" />
-  <title>Portfolio | Your Name</title>
+  <meta name="description" content="Ammar Siraj Ananda | Network Engineer / Web Developer Portfolio" />
+  <title>Ammar Siraj Ananda | Home</title>
 
-  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-  <!-- Top Nav -->
   <header class="nav">
     <div class="container nav__inner">
-      <a class="brand" href="#home">YourName<span>.</span></a>
+      <a class="brand" href="index.html">
+        <span class="brand__dot">●</span> ammar<span class="brand__muted">.dev</span>
+      </a>
 
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
 
       <nav class="nav__menu" id="navMenu">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact" class="btn btn--sm">Contact</a>
+        <a class="is-active" href="index.html">Home</a>
+        <a href="projects/index.html">Projects</a>
+        <a href="resume/index.html">Resume</a>
+        <a href="contact/index.html" class="btn btn--sm">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <main id="home" class="hero">
+  <main class="hero">
     <div class="container hero__grid">
       <div class="hero__text">
-        <p class="badge">Available for freelance / internship</p>
-        <h1>
-          Hi, aku <span class="grad">Your Name</span><br />
-          Web Developer (Python / Flask)
-        </h1>
+        <div class="kicker">
+          <span class="pill">Open to Opportunities</span>
+          <span class="kicker__sep">•</span>
+          <span class="mono">Network Engineer / Web Developer</span>
+        </div>
+
+        <h1>Ammar <span class="grad">Siraj Ananda</span></h1>
+
         <p class="lead">
-          Aku membangun web app yang rapi, aman, dan cepat. Fokus: backend Python (Flask),
-          database, dan UI modern yang clean.
+          Informatics Engineering student based in Bengkulu, Indonesia. I have hands-on experience
+          with LAN/WAN infrastructure using Cisco and Mikrotik, strong troubleshooting, and reliable
+          operational discipline.
         </p>
 
         <div class="hero__cta">
-          <a class="btn" href="#projects">Lihat Project</a>
-          <a class="btn btn--ghost" href="#contact">Kontak</a>
+          <a class="btn" href="projects/index.html"><span class="icon">↗</span> View Projects</a>
+          <a class="btn btn--ghost" href="resume/index.html">View Resume</a>
         </div>
 
-        <div class="hero__meta">
-          <div class="meta">
-            <span class="meta__label">Location</span>
-            <span class="meta__value">Indonesia</span>
+        <div class="hero__mini">
+          <div class="mini">
+            <div class="mini__label">Location</div>
+            <div class="mini__value">Bengkulu, Indonesia</div>
           </div>
-          <div class="meta">
-            <span class="meta__label">Email</span>
-            <span class="meta__value"><a href="mailto:youremail@gmail.com">youremail@gmail.com</a></span>
+          <div class="mini">
+            <div class="mini__label">Email</div>
+            <div class="mini__value"><a href="mailto:ammarsananda345@gmail.com">ammarsananda345@gmail.com</a></div>
           </div>
-          <div class="meta">
-            <span class="meta__label">GitHub</span>
-            <span class="meta__value"><a href="https://github.com/yourusername" target="_blank" rel="noreferrer">github.com/yourusername</a></span>
+          <div class="mini">
+            <div class="mini__label">GitHub</div>
+            <div class="mini__value"><a target="_blank" rel="noreferrer" href="https://github.com/ammar3544">@ammar3544</a></div>
           </div>
         </div>
-      </div>
 
-      <div class="hero__card">
-        <div class="profile">
-          <!-- Ganti src ke fotomu kalau ada -->
-          <img class="profile__img" src="assets/img/avatar.png" alt="Profile" onerror="this.style.display='none'" />
-          <div class="profile__fallback">
-            <div class="ring"></div>
-            <div>
-              <h3>Your Name</h3>
-              <p>Web Developer • Python</p>
-            </div>
-          </div>
-
-          <div class="profile__stats">
-            <div class="stat">
-              <div class="stat__num">10+</div>
-              <div class="stat__label">Projects</div>
-            </div>
-            <div class="stat">
-              <div class="stat__num">1+</div>
-              <div class="stat__label">Years</div>
-            </div>
-            <div class="stat">
-              <div class="stat__num">Fast</div>
-              <div class="stat__label">Delivery</div>
-            </div>
-          </div>
-
-          <div class="profile__links">
-            <a class="chip" href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="chip" href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="chip" href="https://instagram.com/yourusername" target="_blank" rel="noreferrer">Instagram</a>
-          </div>
+        <div class="social">
+          <a class="social__btn" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ammar-s-ananda-3a8a69300">
+            <span class="social__icon">in</span> LinkedIn
+          </a>
+          <a class="social__btn" target="_blank" rel="noreferrer" href="https://github.com/ammar3544">
+            <span class="social__icon">GH</span> GitHub
+          </a>
+          <a class="social__btn" href="contact/index.html">
+            <span class="social__icon">@</span> Contact
+          </a>
         </div>
       </div>
+
+      <aside class="hero__panel">
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal__title mono">ammarsananda@portfolio:~</span>
+          </div>
+          <div class="terminal__body mono">
+            <div><span class="t-dim">$</span> whoami</div>
+            <div class="t-out">Ammar Siraj Ananda</div>
+            <div class="t-gap"></div>
+
+            <div><span class="t-dim">$</span> focus</div>
+            <div class="t-out">LAN/WAN • Cisco • Mikrotik • Troubleshooting</div>
+            <div class="t-gap"></div>
+
+            <div><span class="t-dim">$</span> also</div>
+            <div class="t-out">Python • Flask • REST • MySQL • Git</div>
+            <div class="t-gap"></div>
+
+            <div><span class="t-dim">$</span> next</div>
+            <div class="t-out">See /projects and /resume</div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat__num">Cisco</div>
+            <div class="stat__label">Routing/Switching</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">Mikrotik</div>
+            <div class="stat__label">Configuration</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">Ops</div>
+            <div class="stat__label">Fast-paced work</div>
+          </div>
+        </div>
+      </aside>
     </div>
 
     <div class="bg-blur a"></div>
     <div class="bg-blur b"></div>
+    <div class="bg-grid"></div>
   </main>
 
-  <!-- About -->
-  <section id="about" class="section">
+  <section class="section section--alt">
     <div class="container">
       <div class="section__head">
-        <h2>About</h2>
-        <p>Ringkas, jelas, dan fokus ke value yang kamu bawa.</p>
+        <h2>Quick Summary</h2>
+        <p>What I can help with.</p>
       </div>
 
       <div class="grid-2">
         <div class="card">
-          <h3>Siapa aku?</h3>
-          <p>
-            Aku seorang web developer yang biasa mengerjakan aplikasi berbasis Python (Flask),
-            integrasi database, autentikasi role-based, upload file, hingga fitur keamanan (hashing/enkripsi).
-          </p>
-          <p>
-            Aku suka membuat sistem yang terstruktur: rapi, mudah di-maintain, dan siap dipakai tim.
-          </p>
+          <h3>Networking</h3>
+          <ul class="list">
+            <li>LAN/WAN setup, configuration, and maintenance</li>
+            <li>Subnetting, routing, switching, troubleshooting</li>
+            <li>Basic monitoring mindset: prevent outages & reduce downtime</li>
+          </ul>
+          <div class="project__links">
+            <a class="btn btn--sm" href="projects/index.html">See Projects</a>
+          </div>
         </div>
 
         <div class="card">
-          <h3>Yang sering aku kerjakan</h3>
+          <h3>Software Tools</h3>
           <ul class="list">
-            <li>Backend API (Flask) + MySQL</li>
-            <li>Auth & role (admin/verifikator/user)</li>
-            <li>Upload & processing dokumen (PDF)</li>
-            <li>Security: hashing, encryption workflow</li>
-            <li>UI modern (HTML/CSS/JS)</li>
+            <li>Python + Flask for simple internal tools and dashboards</li>
+            <li>MySQL basics, REST API, Git/GitHub workflow</li>
+            <li>Clean UI: HTML/CSS/JS with responsive layout</li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section section--alt">
-    <div class="container">
-      <div class="section__head">
-        <h2>Skills</h2>
-        <p>Teknologi yang aku pakai dan kuasai.</p>
-      </div>
-
-      <div class="chips">
-        <span class="chip">Python</span>
-        <span class="chip">Flask</span>
-        <span class="chip">MySQL</span>
-        <span class="chip">REST API</span>
-        <span class="chip">HTML</span>
-        <span class="chip">CSS</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">Git / GitHub</span>
-        <span class="chip">Linux</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section__head">
-        <h2>Projects</h2>
-        <p>Pilih 3–6 project terbaikmu. Tambahkan link demo / repo.</p>
-      </div>
-
-      <div class="cards">
-        <!-- PROJECT 1 -->
-        <article class="card project">
-          <div class="project__top">
-            <h3>Secure Docs Verification</h3>
-            <span class="pill">Flask • Crypto • PDF</span>
-          </div>
-          <p>
-            Sistem pengamanan & verifikasi dokumen dengan hashing + QR metadata, role-based access,
-            dan workflow validasi dokumen.
-          </p>
           <div class="project__links">
-            <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noreferrer">Repo</a>
-            <a class="btn btn--sm" href="#" target="_blank" rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
-
-        <!-- PROJECT 2 -->
-        <article class="card project">
-          <div class="project__top">
-            <h3>Portfolio Website</h3>
-            <span class="pill">HTML • CSS • JS</span>
-          </div>
-          <p>
-            Website portfolio responsive, cepat, dan siap deploy di GitHub Pages dengan struktur rapi.
-          </p>
-          <div class="project__links">
-            <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noreferrer">Repo</a>
-            <a class="btn btn--sm" href="#" target="_blank" rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
-
-        <!-- PROJECT 3 -->
-        <article class="card project">
-          <div class="project__top">
-            <h3>Admin Dashboard</h3>
-            <span class="pill">CRUD • Auth • UI</span>
-          </div>
-          <p>
-            Dashboard admin untuk manajemen data, filter, export, dan audit log sederhana.
-          </p>
-          <div class="project__links">
-            <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noreferrer">Repo</a>
-            <a class="btn btn--sm" href="#" target="_blank" rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="section section--alt">
-    <div class="container">
-      <div class="section__head">
-        <h2>Experience</h2>
-        <p>Kalau belum kerja formal, isi dengan organisasi, kepanitiaan, atau freelance.</p>
-      </div>
-
-      <div class="timeline">
-        <div class="titem card">
-          <div class="titem__head">
-            <h3>Web Developer (Freelance)</h3>
-            <span>2025 — Sekarang</span>
-          </div>
-          <ul class="list">
-            <li>Membangun landing page & web app sederhana untuk kebutuhan UMKM/organisasi.</li>
-            <li>Fokus performance, struktur folder rapi, dan deployment.</li>
-          </ul>
-        </div>
-
-        <div class="titem card">
-          <div class="titem__head">
-            <h3>Organisasi / Kepanitiaan</h3>
-            <span>2024 — 2025</span>
-          </div>
-          <ul class="list">
-            <li>Kontribusi design / dokumentasi / website event.</li>
-            <li>Koordinasi tim & deliverable berbasis jadwal.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section__head">
-        <h2>Contact</h2>
-        <p>Kamu bisa taruh email, WhatsApp link, dan form sederhana (tanpa backend).</p>
-      </div>
-
-      <div class="grid-2">
-        <div class="card">
-          <h3>Let’s talk</h3>
-          <p>Untuk kerja sama, project, atau kesempatan magang.</p>
-
-          <div class="contact__items">
-            <a class="contact__item" href="mailto:youremail@gmail.com">
-              <span>Email</span><b>youremail@gmail.com</b>
-            </a>
-            <a class="contact__item" href="https://wa.me/628xxxxxxxxxx" target="_blank" rel="noreferrer">
-              <span>WhatsApp</span><b>+62 8xx-xxxx-xxxx</b>
-            </a>
-            <a class="contact__item" href="https://github.com/yourusername" target="_blank" rel="noreferrer">
-              <span>GitHub</span><b>@yourusername</b>
-            </a>
+            <a class="btn btn--sm btn--ghost" href="resume/index.html">View Resume</a>
           </div>
         </div>
-
-        <form class="card form" onsubmit="return handleSubmit(event)">
-          <h3>Kirim pesan</h3>
-          <label>
-            Nama
-            <input required name="name" placeholder="Nama kamu" />
-          </label>
-          <label>
-            Email
-            <input required type="email" name="email" placeholder="email@domain.com" />
-          </label>
-          <label>
-            Pesan
-            <textarea required name="message" rows="5" placeholder="Tulis pesan..."></textarea>
-          </label>
-
-          <button class="btn" type="submit">Kirim</button>
-          <p class="hint" id="formHint">
-            Form ini demo (tanpa backend). Nanti bisa aku bantu sambungkan ke Formspree/Google Form.
-          </p>
-        </form>
       </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© <span id="year"></span> Your Name. Built with HTML/CSS/JS.</p>
-      <a href="#home" class="to-top">Back to top ↑</a>
+      <p class="mono">© <span id="year"></span> Ammar Siraj Ananda</p>
+      <a class="to-top mono" href="contact/index.html">Contact →</a>
     </div>
   </footer>
 
